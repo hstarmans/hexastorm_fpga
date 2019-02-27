@@ -1,0 +1,9 @@
+*.pyc
+*.stl
+*.png
+*.bin
+xilinx/
+testbench.vcd*
+__pycache__/
+*.odt
+

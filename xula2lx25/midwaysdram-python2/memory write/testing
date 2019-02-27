@@ -1,0 +1,22 @@
+# WRITE AND READ TEST
+# AVAILABLE here
+https://github.com/rheineke/XSTOOLs/tree/python3
+# THE ADDR
+There are three types of hex files
+ - 16 bit addres I8X
+ - 20 bit addres I16X
+ - 32 bit address I32X
+THe address width is not specified; probably one is default and this is already used by Python.
+The 16-bit data words in the SDRAM are mapped into the eight-bit data format of the 
+.HEX, .MCS, .EXO and .XES files using a Big Endian style. That is, the 16-bit word at 
+location N in the SDRAM is stored in the eight-bit file with the upper eight bits at address 
+2N and the lower eight bits at address 2N+1.
+Therefore, if you don't write a multiple of 2. XSTOOLS starts complaining.
+
+
+# HOW TO TEST
+# MEMORY ACCEPTS 100000
+1. FILL THE MEMORY WITH ones
+2. FILL THE MEMORY WITH ZEROES
+
+# MORE COMPLICATED TEST
