@@ -25,7 +25,8 @@ In the future, I might therefore return to MyHDL. If I am going to do this, I st
 
 ## Advice
 You can add a beaglewire to the beaglebone. The beaglewire uses the lattice so you can compile bitstreams via Linux.
-As alternative to MyHDL you can try Migen. I guess the whole project would be very hard, hope this helps!
+As alternative to MyHDL you can try Migen. You need to make sure you have a driver for the SDRAM.
+The driver I use is no longer maintained; look into [misoc](https://github.com/m-labs/misoc)
 
 
 
