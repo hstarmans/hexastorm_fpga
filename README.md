@@ -1,6 +1,7 @@
 # hexastorm_fpga
 FPGA code used to calibrate the Hexastorm. The code is very dated. It was used for the first Hexastorm.
-The code is not being maintained.
+The code is not being maintained. I have decided to switch from MyHDL to Migen. The internal sram is used as ringbuffer.
+Data is uploaded via SPI. The code can be here [here](https://github.com/hstarmans/migen_tests)
 
 ## HIGH LIGHTS
 The following folders in the project;
@@ -18,15 +19,7 @@ Data can be uploaded to the SDRAM with XSTOOL; which is provided by XESS.
 ## Conclusion
 It turned out that the Xula-LX25 was a great learning project but a hard board to build a machine around.
 In the end, I switched to the Beaglebone. The Beaglebone does, however, not have the potential to reach the speeds of an FPGA.
-In the future, I might therefore return to MyHDL. If I am going to do this, I still need to solve the following problems;
-* current code is ugly (solvable)
-* it is not possible to upload data to the sdram, only via XSTOOLS (challenge, no idea how to solve it)
-* could I use a ring buffer like is done with the beaglebone?
-
-## Advice
-You can add a beaglewire to the beaglebone. The beaglewire uses the lattice so you can compile bitstreams via Linux.
-As alternative to MyHDL you can try Migen. You need to make sure you have a driver for the SDRAM.
-The driver I use is no longer maintained; look into [misoc](https://github.com/m-labs/misoc)
+A new project to build a FPGA controller is underway, first tests can be found [here](https://github.com/hstarmans/migen_tests).
 
 
 
